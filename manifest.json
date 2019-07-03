@@ -1,0 +1,31 @@
+{
+  "name": "Youtube Pop Up Controller",
+  "version": "1.0",
+  "description": "Play Pause Next video",
+  "manifest_version": 2,
+
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webNavigation",
+    "storage"
+    
+  ],
+  
+  
+
+"content_scripts":[
+{
+  "matches": ["*://*.youtube.com/*"],
+"js":["content.js"]
+
+}
+],
+  "browser_action": {
+  
+"default_popup": "index.html",
+
+"default_title": "Play Pause "
+}
+
+}
